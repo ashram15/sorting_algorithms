@@ -21,9 +21,6 @@ void bubbleSortArray(vector<int>& arr);
 void selectionSort(vector<int>& arr);
 void insertionSort(vector<int> &arr);
 
-long long comparisionCount = 0;
-long long swapCount = 0;
-
 
 int main()
 {
