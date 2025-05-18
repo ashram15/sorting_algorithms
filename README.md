@@ -3,10 +3,10 @@
    - Least efficient algorithm
    - makes O(n^2) comparisions worst case 
 3. Selection Sort
-   - like bubble sort however, continuesly finds the max element and ultimately sorts the array
+   - Algorithm works by continuously finding the max element each iteration. This ultimately sorts the array. 
    - makes O(n^2) comparisions worst case  
 5. Insertion Sort
-   - similar to sorting playing cards in your hand
+   - Similar to sorting playing cards in your hand
    - makes O(n^2) comparisions worst case
 7. Quick Sort
    - most efficient out of those listed here
