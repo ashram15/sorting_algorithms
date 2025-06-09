@@ -22,10 +22,10 @@
 This program contains these sorting algorithms and uses each of them to sort a randomly assigned array/vector of size n. The program then displays the time taken to 
 sort each of those arrays/vectors to the console.
 
-# # How to run: 
+## How to run: 
 - compile with g++
 
-# # Technologies 
+## Technologies 
 - C++
 - standard C++ template library (STL)
 
