@@ -1,4 +1,4 @@
-# Sorting Algorithms (more to add): 
+# Sorting Algorithm Visualizer (C++): 
 1. Bubble Sort:
    - Least efficient algorithm
    - makes O(n^2) comparisions worst case 
