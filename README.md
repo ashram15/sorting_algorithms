@@ -20,4 +20,12 @@
    - Linearmathic (linear plus logarithmic)
      
 This program contains these sorting algorithms and uses each of them to sort a randomly assigned array/vector of size n. The program then displays the time taken to 
-sort each of those arrays/vectors to the console. 
+sort each of those arrays/vectors to the console.
+
+# # How to run: 
+- compile with g++
+
+# # Technologies 
+- C++
+- standard C++ template library (STL)
+
