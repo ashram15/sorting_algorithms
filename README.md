@@ -1,34 +1,44 @@
 # Sorting Algorithm Visualizer (C++): 
 
 ## Overview:
-This project implements and analyzes five common sorting algorithms in C++. It is also designed to benchmark their performances by sorting a large, randomly, generated vector and timing how long each algorithm takes to complete the sort. This serves as a visualization of each algorithm's time complexity. 
+This project implements and analyzes five common sorting algorithms in C++. This program contains the following sorting algorithms and uses each of them to sort a large randomly assigned vector of size n. The program then displays the time taken to sort the vector using each sorting algorithm to the console.
 
 ## Algorithms: 
 **1. Bubble Sort**:
    - Simplest Sorting algorithm; works by repeatedly stepping through the list, comparing adjacent elements and swapping them if they are in the wrong order. 
-   - Time Complexity: `$O(n^2)$`   
+   - Time Complexity: `$O(n^2)$`
+
 **2. Selection Sort**:
-   - Algorithm works by continuously finding the max element each iteration. This ultimately sorts the array. 
-   - Time Complexity: `$O(n^2)$`    
+   - Algorithm works by repeatedly finding the minimum value of each unsorted subarray in the full array and putting it at the beginning. At the end of the array, the full array will be sorted. 
+   - Time Complexity: `$O(n^2)$`
+
 **3. Insertion Sort**:
-   - Similar to sorting playing cards in your hand
-   - makes O(n^2) comparisions worst case
-4. Quick Sort
-   - most efficient out of those listed here
-   - makes O(n log n) comparisions
-   - Divide and conquer algorithm
-   - Linearathmic (linear plus logarithmic) 
-5. Merge Sort
-   - Efficient sorting algorithm
-   - makes O(n log n) comparisions
-   - Divide and conquer algorithm
-   - Linearmathic (linear plus logarithmic)
+   - Sorts elements in the array by extracting and inserting the element in the correct spot (like sorting your hand of playing cards) 
+   - Time Complexity: `$O(n^2)$`
+
+**4. Quick Sort**
+   - Highly efficient sorting algorithm, works by partioning and sorting based on a pivot.  
+   - Time Complexity: `O(n \log n)$` (Linearithmic)
+
+**5. Merge Sort**
+   - A Highly efficient, stable, comparision-based sorting algorithm based on common divide and conquer algorithms. 
+   - Time Complexity: `O(n \log n)$` (Linearithmic - Linear plus Logarithmic)
      
-This program contains these sorting algorithms and uses each of them to sort a randomly assigned array/vector of size n. The program then displays the time taken to 
-sort each of those arrays/vectors to the console.
 
 ## How to run: 
-- compile with g++
+- Clone the Repo:
+  <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
+- Compile <strong>main.cpp</strong>:
+  g++ main.cpp
+
+## Sample Result: 
+Size of array: 50000
+
+BUBBLE SORT TIME: 18.006124
+SELECTION SORT TIME: 5.936390
+INSERTION SORT TIME: 3.764035
+QUICK SORT TIME: 0.006673
+MERGE SORT TIME: 0.279051
 
 ## Technologies 
 - C++
