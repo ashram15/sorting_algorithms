@@ -6,10 +6,10 @@ This project implements and analyzes five common sorting algorithms in C++. It i
 ## Algorithms: 
 **1. Bubble Sort**:
    - Simplest Sorting algorithm; works by repeatedly stepping through the list, comparing adjacent elements and swapping them if they are in the wrong order. 
-   - Time Complexity: `$O(n^2)$` 
+   - Time Complexity: `$O(n^2)$`   
 **2. Selection Sort**:
    - Algorithm works by continuously finding the max element each iteration. This ultimately sorts the array. 
-   - Time Complexity: `$O(n^2)$`  
+   - Time Complexity: `$O(n^2)$`    
 **3. Insertion Sort**:
    - Similar to sorting playing cards in your hand
    - makes O(n^2) comparisions worst case
