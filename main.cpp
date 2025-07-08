@@ -32,7 +32,7 @@ int main()
     unsigned int seed = time(0);
     srand(seed);
     
-    for (int i = 0; i < 10000; ++i)
+    for (int i = 0; i < 50000; ++i)
     {
         originalData.push_back(rand()); // Generate random numbers between 1 and 10
     }
@@ -87,7 +87,6 @@ int main()
     cout<<"\n"<<"QUICK SORT TIME: "<<quick_sort_time<<endl;
     cout<<"\n"<<"MERGE SORT TIME: "<<merge_sort_time<<endl;
     
-    
 }
 
 //O(n log n)
@@ -96,91 +95,67 @@ int main()
 //Recursion
 void merge(vector<int>& arr1, vector<int>& arr2, vector<int>& merged){
     merged.clear(); //clear merged vector before merging new elements.
-    while(!arr1.empty()&&!arr2.empty()){
-        if(arr1.front()>arr2.front()){
-            merged.push_back(arr2.front());
-            arr2.erase(arr2.begin());
+    int i = 0, j = 0;
+    
+    while(i < arr1.size()&& j < arr2.size()){
+        if(arr1[i] < arr2[j]){
+            merged.push_back(arr1[i++]);
         }else{
-            merged.push_back(arr1.front());
-            arr1.erase(arr1.begin());
+            merged.push_back(arr2[j++]);
         }
     }
     //now wither arr1 or arr2 is empty
-    while(!arr1.empty()){
-        merged.push_back(arr1.front());
-        arr1.erase(arr1.begin());
+    while(i < arr1.size()){
+        merged.push_back(arr1[i++]);
     }
-    while(!arr2.empty()){
-        merged.push_back(arr2.front());
-        arr2.erase(arr2.begin());
+    while(j < arr2.size()){
+        merged.push_back(arr2[j++]);
     }
     
 }
 
-//int mergeCount = 0;
 void mergeSortArray(vector<int>& arr){
     if(arr.size() <= 1){ //Base case: array is alreay sorted or empty.
-        //cout<<arr.size();
         return;
     }
-    //mergeCount++;
-    /*vector<int> arrayOne(arr.begin(), arr.begin()+arr.size()/2);
-    vector<int> arrayTwo(arr.begin()+arr.size()/2, arr.end());*/
-    vector<int>arrayOne;
-    vector<int>arrayTwo;
     
-    int index = (int) arr.size();
-    for(int i = 0; i<index/2;i++){
-        arrayOne.push_back(arr[i]);
-    }
-    for(int i =(index/2); i<arr.size(); i++){
-        arrayTwo.push_back(arr[i]);
-    }
+    vector<int> arrayOne(arr.begin(), arr.begin()+arr.size() / 2);
+    vector<int> arrayTwo(arr.begin()+arr.size() / 2, arr.end());
     
    
     mergeSortArray(arrayOne);
     mergeSortArray(arrayTwo);
     
     merge(arrayOne, arrayTwo, arr);
-    //cout<< "Number of comparisions: "<< mergeCount<<endl;//testing
     
 }
 
 //O(nlogn)
 //Quick Sort
+//This algorithm uses the Lomuto Partition Scheme. But
 //Partioning and Sorting based on a Pivot
 int partition(int low, int high, vector<int>& part)
 {
-    //Choose the middle element as pivot
-    int mid = low + (high - low) / 2;
-    swap(part.at(low), part.at(mid));
+    //Choose a random element as pivot and move this to end
+    int randomIndex = low + rand() % (high - low + 1);
+    swap(part[randomIndex], part[high]);
     
-    int pivot = part[low];
+    int pivot = part[high]; //new pivot based on randomized selection
+    int leftIndex = low-1; //new pivot location tracker
     
-    int i = low;
-    int h = high;
-    
-    while(i < h)
-    {
-        do
-        {
-            i++;
-        } while(i <= high && part.at(i) <= pivot);
-        
-        do
-        {
-            h--;
-        } while(h >= low && part.at(h) > pivot);
-        
-        if(i<h)
-        {
-            swap(part.at(i), part.at(h));
+    //loop through partition. If an element to the right of leftIndex is less than pivot, make that element new leftIndex.
+    //Now, everything to the right of new leftIndex is greater and everything to left is less.
+    for(int i = low; i < high; i++){
+        if(part[i] < pivot){
+            leftIndex++;
+            swap(part[leftIndex], part[i]);
         }
-        
     }
-
-    swap(part.at(low), part.at(h)); // Place pivot in correct position
-    return h; //returning the new pivot (sorted element)
+    
+    //After for loop is done, we have properly found our new pivot and correctly sorted it.
+    //Swap old pivot location with new one.
+    swap(part[high], part[leftIndex+1]);
+    return leftIndex+1;
         
 }
 
