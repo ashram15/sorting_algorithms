@@ -26,7 +26,7 @@ This project implements and analyzes five common sorting algorithms in C++. This
      
 
 ## How to run: 
-- Clone the Repo:
+- Clone the Repo:  
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
 - Compile <strong>main.cpp</strong>:  
   <code>g++ main.cpp</code>
