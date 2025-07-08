@@ -18,18 +18,18 @@ This project implements and analyzes five common sorting algorithms in C++. This
 
 **4. Quick Sort**
    - Highly efficient sorting algorithm, works by partioning and sorting based on a pivot.  
-   - Time Complexity: `O(n \log n)$` (Linearithmic)
+   - Time Complexity: `$O(n \log n)$` (Linearithmic)
 
 **5. Merge Sort**
    - A Highly efficient, stable, comparision-based sorting algorithm based on common divide and conquer algorithms. 
-   - Time Complexity: `O(n \log n)$` (Linearithmic - Linear plus Logarithmic)
+   - Time Complexity: `$O(n \log n)$` (Linearithmic - Linear plus Logarithmic)
      
 
 ## How to run: 
 - Clone the Repo:
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
 - Compile <strong>main.cpp</strong>:  
-  g++ main.cpp
+  <code>g++ main.cpp</code>
 
 ## Sample Result: 
 Size of array: 50000  
