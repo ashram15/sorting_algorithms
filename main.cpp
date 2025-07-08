@@ -21,76 +21,61 @@ void bubbleSortArray(vector<int>& arr);
 void selectionSort(vector<int>& arr);
 void insertionSort(vector<int> &arr);
 
+long long comparisionCount = 0;
+long long swapCount = 0;
+
 
 int main()
 {
-    vector<int> testing;
+    vector<int> originalData;
     
     unsigned int seed = time(0);
     srand(seed);
     
-    for (int i = 0; i < 100000; ++i)
+    for (int i = 0; i < 10000; ++i)
     {
-        testing.push_back(rand() % 10 + 1); // Generate random numbers between 1 and 10
+        originalData.push_back(rand()); // Generate random numbers between 1 and 10
     }
     
-    int n = (int) testing.size();
+    int n = (int) originalData.size();
     cout<< "Size of array: " << n << endl;
     
     //TESTING SORTING TIMES
     clock_t start_time, end_time;
     
     //bubble sort
+    vector<int> copyArray = originalData;
     start_time = clock();
-    bubbleSortArray(testing);
+    bubbleSortArray(copyArray);
     end_time = clock();
     double bubble_sort_time = double(end_time - start_time) / CLOCKS_PER_SEC;
     
-    // Generate random numbers between 1 and 10
-    for (int i = 0; i < n; ++i)
-    {
-        testing[i] = rand() % 10 + 1;
-    }
-
     //selection sort
+    copyArray = originalData;
     start_time = clock();
-    selectionSort(testing);
+    selectionSort(copyArray);
     end_time = clock();
     double selection_sort_time = double(end_time - start_time) / CLOCKS_PER_SEC;
-    
-    // Generate random numbers between 1 and 10
-    for (int i = 0; i < n; ++i)
-    {
-        testing[i] = rand() % 10 + 1;
-    }
 
     //insertion sort
+    copyArray = originalData;
     start_time = clock();
-    insertionSort(testing);
+    insertionSort(copyArray);
     end_time = clock();
     double insertion_sort_time = double(end_time - start_time) / CLOCKS_PER_SEC;
     
-    // Generate random numbers between 1 and 10
-    for (int i = 0; i < n; ++i)
-    {
-        testing[i] = rand() % 10 + 1;
-    }
-
     //quick sort
+    copyArray = originalData;
     start_time = clock();
-    quickSortArray(0, n - 1, testing);
+    quickSortArray(0, n - 1, copyArray);
     end_time = clock();
     double quick_sort_time = double(end_time - start_time) / CLOCKS_PER_SEC;
     
-    // Generate random numbers between 1 and 10
-    for (int i = 0; i < n; ++i)
-    {
-        testing[i] = rand() % 10 + 1;
-    }
     
     //merge sort
+    copyArray = originalData;
     start_time = clock();
-    mergeSortArray(testing);
+    mergeSortArray(copyArray);
     end_time = clock();
     double merge_sort_time = double(end_time - start_time) / CLOCKS_PER_SEC;
     
