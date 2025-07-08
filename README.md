@@ -32,13 +32,13 @@ This project implements and analyzes five common sorting algorithms in C++. This
   <code>g++ main.cpp</code>
 
 ## Sample Result: 
-Size of array: 50000  
+Size of array: 50000
 
-BUBBLE SORT TIME: 18.006124 seconds  
-SELECTION SORT TIME: 5.936390 seconds  
-INSERTION SORT TIME: 3.764035 seconds  
-QUICK SORT TIME: 0.006673 seconds  
-MERGE SORT TIME: 0.279051 seconds  
+BUBBLE SORT TIME: 17.832436 seconds
+SELECTION SORT TIME: 5.877492 seconds
+INSERTION SORT TIME: 3.762915 seconds
+QUICK SORT TIME: 0.008064 seconds
+MERGE SORT TIME: 0.058319 seconds
 
 ## Technologies 
 - C++
