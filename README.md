@@ -1,7 +1,9 @@
 # Sorting Algorithm Visualizer (C++): 
 
 ## Overview:
-This project implements and analyzes five common sorting algorithms in C++. This program contains the following sorting algorithms and uses each of them to sort a large randomly assigned vector of size n. The program then displays the time taken to sort the vector using each sorting algorithm to the console (in seconds).
+This project implements and analyzes five common sorting algorithms in C++. Each algorithm is used to sort <strong>randomized</strong> arrays of varying sizes, from 1000 to 50,000 elements. The program then measures the time taken by each algorithm to sort these arrays and writes these results to a CSV file. 
+
+A python script (plot.py) then reads the CSV data and visualizes the performance of each sorting algorithm using Matplotlib. The resulting plot, which shows the sorting time(in seconds) as a function of array size (n), is attatched at the bottom of this README. 
 
 ## Algorithms: 
 **1. Bubble Sort**:
@@ -24,7 +26,6 @@ This project implements and analyzes five common sorting algorithms in C++. This
    - A Highly efficient, stable, comparision-based sorting algorithm based on common divide and conquer algorithms. 
    - Time Complexity: $O(n \log n)$ (Linearithmic - Linear plus Logarithmic)
      
-
 ## How to run: 
 - Clone the Repo:  
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
@@ -37,8 +38,8 @@ This project implements and analyzes five common sorting algorithms in C++. This
 ## Sample Result Graph (from plot.py)
 <img width="1004" alt="Screenshot 2025-07-09 at 10 49 24 PM" src="https://github.com/user-attachments/assets/1aa597b5-45b7-4e27-978b-0a7f8675d8df" />
 
-
 ## Technologies 
 - C++
-- Python matplotlib (to plot)
+- Python
+- Matplotlib
 
