@@ -32,7 +32,7 @@ This project implements and analyzes five common sorting algorithms in C++. This
   <code>g++ main.cpp</code>
   
 ## To visualize results
-- <code>python plot.py</code>
+- Run <code>python plot.py</code>
 
 ## Sample Result Graph (from plot.py)
 <img width="1004" alt="Screenshot 2025-07-09 at 10 49 24 PM" src="https://github.com/user-attachments/assets/1aa597b5-45b7-4e27-978b-0a7f8675d8df" />
