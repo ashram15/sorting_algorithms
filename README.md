@@ -32,7 +32,7 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
 - Compile <strong>main.cpp</strong>:  
   <code>g++ main.cpp</code>
   
-## To visualize results
+## To Visualize Results
 - Run <code>python plot.py</code>
 
 ## Sample Result Graph (from plot.py)
