@@ -30,17 +30,15 @@ This project implements and analyzes five common sorting algorithms in C++. This
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
 - Compile <strong>main.cpp</strong>:  
   <code>g++ main.cpp</code>
+  
+## To visualize results
+- <code>python plot.py</code>
 
-## Sample Result: 
-Size of array: 50000
+## Sample Result Graph (from plot.py)
+<img width="1004" alt="Screenshot 2025-07-09 at 10 49 24 PM" src="https://github.com/user-attachments/assets/1aa597b5-45b7-4e27-978b-0a7f8675d8df" />
 
-BUBBLE SORT TIME: 17.832436 seconds  
-SELECTION SORT TIME: 5.877492 seconds  
-INSERTION SORT TIME: 3.762915 seconds  
-QUICK SORT TIME: 0.008064 seconds  
-MERGE SORT TIME: 0.058319 seconds  
 
 ## Technologies 
 - C++
-- standard C++ template library (STL)
+- Python matplotlib (to plot)
 
