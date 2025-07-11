@@ -3,7 +3,7 @@
 ## Overview:
 This project implements and analyzes five common sorting algorithms in C++. Each algorithm is used to sort <strong>randomized</strong> arrays of varying sizes, from 1000 to 50,000 elements. The program then measures the time taken by each algorithm to sort these arrays and writes these results to a CSV file. 
 
-A python script (plot.py) then reads the CSV data and visualizes the performance of each sorting algorithm using Matplotlib. The resulting plot, which shows the sorting time(in seconds) as a function of array size (n), is attatched at the bottom of this README. 
+A python script (plot.py) then reads the CSV data and visualizes the performance of each sorting algorithm using Matplotlib. The resulting plot, which shows the sorting time(in seconds and in <strong>log scale</strong>) as a function of array size (n), is attatched at the bottom of this README. 
 
 ## Algorithms: 
 **1. Bubble Sort**:
