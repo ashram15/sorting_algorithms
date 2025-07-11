@@ -11,7 +11,7 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
    - Time Complexity: $O(n^2)$
 
 **2. Selection Sort**:
-   - Algorithm works by repeatedly finding the minimum value of each unsorted subarray in the full array and putting it at the beginning. At the end of the array, the full array will be sorted. 
+   - Algorithm works by repeatedly finding the minimum value of each unsorted subarray in the full array and putting it at the beginning of the subarray. At the end of the sort, the full array will be sorted. 
    - Time Complexity: $O(n^2)$
 
 **3. Insertion Sort**:
