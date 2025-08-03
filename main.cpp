@@ -98,19 +98,7 @@ int main()
     out.close();
     cout << "Done! Results written to results.csv\n";
     cout << "Results written to: " << filesystem::absolute("results.csv") << endl;
-    return 0;
-    
-    
-    
-
-    
-//    cout<<"\n"<<"BUBBLE SORT TIME: "<<bubble_sort_time << " seconds"<<endl;
-//    cout<<"\n"<<"SELECTION SORT TIME: "<<selection_sort_time << " seconds"<<endl;
-//    cout<<"\n"<<"INSERTION SORT TIME: "<<insertion_sort_time << " seconds"<<endl;
-//    cout<<"\n"<<"QUICK SORT TIME: "<<quick_sort_time<< " seconds" << endl;
-//    cout<<"\n"<<"MERGE SORT TIME: "<<merge_sort_time << " seconds"<<endl;
-    
-    
+    return 0;  
     
 }
 
@@ -215,13 +203,6 @@ void bubbleSortArray(vector<int>& arr){
 //O(n^2) even in best case scenario with a mostly sorted array
 //Selection Sort
 //Sorting elements in an array by finding the minimum value of each unsorted subarray in the full array
-/*
- *
- SIDE NOTE: WHEN PASSING VECTOR PARAMETERS, YOU SHOULD USE THE REFERENCE OPERATOR &, AS VECTORS ARE PASSED BY VALUE AND IF YOU WANT TO CHANGE A VALUE,
-    YOU HAVE TO INDICATE THAT IT IS A REFERENCE TO THAT VALUE. FOR ARRAYS, YOU DO NOT HAVE TO DO THIS, BECAUSE ARRAYS ARE ALREADY PASSED BY REFERENCE.
- *
- * FOR VECTORS, IF YOU ARE ADDING A NEW ELEMENT, USE .PUSH_BACK(), NOT []. YOU CAN USE [] INSTEAD OF .AT()
- */
 void selectionSort(vector<int>& arr)
 {
     int minIdx = 0;
@@ -235,14 +216,8 @@ void selectionSort(vector<int>& arr)
             }
         }
         swap(arr[i], arr[minIdx]); //after looping through all elements, swap the left most element with the new minimum element.
-        
-        //SWAP METHOD CONTEXT OR CODE//
-        /*int pointer = arr[i];
-        arr[i]=arr[minIdx];
-        arr[minIdx]=pointer;*/
     }
-    //testing
-   // cout<< "Number of comparisions: "<< count<<endl;
+    
 }
 //O(n^2)
 //Insertion Soet
@@ -254,8 +229,6 @@ void insertionSort(vector<int> &arr){
         int k = i-1; //index of elemnt before it
         while(k>=0 && arr.at(k)>pointer){ //loop through all elements before extracted element that are greater
                                         //than extracted element
-            //testing
-            //count++;
             arr.at(k+1) = arr.at(k);            //move all elements greater than arr[i] up one spot.
             k--;                        //decrement element index to loop through all indicis before element.
         }
