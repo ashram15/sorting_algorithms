@@ -37,8 +37,8 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
 - Create venv for your python:
   <code>python -m venv venv</code>
 - Activate venv 
-  <code>source venv/bin/activate</code>
-- Run python file: 
+  <code>source venv/bin/activate</code>    
+- Run python file:  
   <code>python plot.py</code>
 
 ## Sample Result Graph (from plot.py)
