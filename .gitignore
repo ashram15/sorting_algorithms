@@ -1,4 +1,3 @@
-./venv
-#bytecode
-./main
-./results.csv
+.venv/
+main
+results.csv
