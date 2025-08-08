@@ -36,10 +36,12 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
   
 ## To See Visualized Results
 - Create venv for your python:
-  <code>python -m venv venv</code>
+  <code>python3 -m venv .venv</code>
 - Activate venv 
-  <code>source venv/bin/activate</code>    
-- Run python file:  
+  <code>source .venv/bin/activate</code> 
+- Install Requirements   
+  <code>pip3 install -r requirements.txt</code>     
+- Run python file:    
   <code>python plot.py</code>
 
 ## Sample Result Graph (from plot.py)
