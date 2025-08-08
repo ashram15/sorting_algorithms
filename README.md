@@ -31,7 +31,7 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
 - Compile <strong>main.cpp</strong> (source file):  
   <code>g++ -std=c++17 main.cpp -o main</code>  
-- Run source file: 
+- Run source file:   
   <code>./main</code>
   
 ## To See Visualized Results
