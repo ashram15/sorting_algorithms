@@ -1,3 +1,4 @@
 ./venv
 #bytecode
-main
+./main
+./results.csv
