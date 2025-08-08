@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # READ CSV FILE
-df = pd.read_csv("../results.csv")
+df = pd.read_csv("results.csv")
 
 df.columns = df.columns.str.strip()
 

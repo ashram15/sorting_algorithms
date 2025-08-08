@@ -29,11 +29,17 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
 ## How to run: 
 - Clone the Repo:  
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
-- Compile <strong>main.cpp</strong>:  
-  <code>g++ main.cpp</code>
+- Compile and Run <strong>main.cpp</strong> (source file):  
+  <code>g++ -std=c++17 main.cpp -o main</code>
+  <code>./main</code>
   
-## To Visualize Results
-- Run <code>python plot.py</code>
+## To See Visualized Results
+- Create venv for your python:
+  <code>python -m venv venv</code>
+- Activate venv 
+  <code>source venv/bin/activate</code>
+- Run python file: 
+  <code>python plot.py</code>
 
 ## Sample Result Graph (from plot.py)
 <img width="1004" alt="Screenshot 2025-07-09 at 10 49 24 PM" src="https://github.com/user-attachments/assets/1aa597b5-45b7-4e27-978b-0a7f8675d8df" />
