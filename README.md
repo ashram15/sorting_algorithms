@@ -29,8 +29,9 @@ A python script (plot.py) then reads the CSV data and visualizes the performance
 ## How to run: 
 - Clone the Repo:  
   <code>git clone git@github.com:ashram15/sorting_algorithms.git</code>
-- Compile and Run <strong>main.cpp</strong> (source file):  
+- Compile <strong>main.cpp</strong> (source file):  
   <code>g++ -std=c++17 main.cpp -o main</code>  
+- Run source file: 
   <code>./main</code>
   
 ## To See Visualized Results
